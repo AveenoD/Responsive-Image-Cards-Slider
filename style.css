@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("/images/bg.jpg") #030728 no-repeat center;
+}
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 120rem;
+    margin: 0 7rem 5.5rem;
+}
+.card-list .card-item{
+    color: white;
+    user-select: none;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .8rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    
+
+}
+.card-list .card-item .User-image{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+    border: .3rem solid white;
+    padding: 0.4rem;
+}
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 1.4rem 0 1.4rem;
+}
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 1rem 3.5rem;
+    color: #030728;
+    border-radius: .6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+    border: .1rem solid transparent;
+}
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: .1rem solid white;
+    color: white;
+
+}
+.slider-wrapper .swiper-pagination-bullet{
+    background: white;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.slider-wrapper.swiper-slide-button{
+    color: white;
+    margin-top: -5rem ;
+    transition: .2s ease;
+}
+.slider-wrapper.swiper-slide-button:hover{
+    color: #4658ff;
+}
+@media (max-width: 768px) {
+    .slider-wrapper{
+        margin: 0 1rem 4rem;
+    }
+    .slider-wrapper.swiper-slide-button{
+        display: none;
+    }
+}
